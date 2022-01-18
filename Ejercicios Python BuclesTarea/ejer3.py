@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     contadorAlumnos = 0
-    aprobados: int = 0
+    aprobados = 0
     suspensos = 0
     total = 0
     entrada = " "
