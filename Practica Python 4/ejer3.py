@@ -33,4 +33,3 @@ if __name__ == '__main__':
     print("\tAprobados:", aprobados)
     print("\tSuspensos:", suspensos)
     print("\tNota media:", total / contador)
-

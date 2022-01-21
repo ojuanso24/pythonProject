@@ -14,10 +14,8 @@ if __name__ == '__main__':
                     contador = 0
 
                 if len(str(i + 1)) == 1:
-                    print("", i + 1, end=" ")
-
-                if len(str(i + 1)) == 2:
-                    print(i + 1, end=" ")
+                    print("", end=" ")
+                print(i + 1, end=" ")
                 contador += 1
         else:
             print("Número fuera de rango")
