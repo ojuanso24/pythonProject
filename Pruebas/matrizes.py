@@ -34,11 +34,11 @@ def sumaVecimos(x, y, matriz):
     suma = matriz[x][y]
     if x > 0:
         suma += matriz[x-1][y]
-    if x > len(suma) - 1:
+    if x < len(suma) - 1:
         suma += matriz[x + 1][y]
     if y > 0:
         suma += matriz[x][y - 1]
-    if y > len(matriz[0] - 1):
+    if y < len(matriz[0]) -1:
         suma += matriz[x][y + 1]
     return suma
 
