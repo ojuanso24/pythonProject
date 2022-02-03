@@ -6,7 +6,11 @@ def genenaraMatriz(fila, columna, maxAleatorio = 100, minAleatorio = 0):
 
 
 def genenaraMatrizTamanoRandon():
-    return [[random.randint(0, 10) for x in range(random.randint(1, 10))] for y in range(random.randint(1, 10))]
+    return [[random.randint(0, 100) for x in range(random.randint(1, 100))] for y in range(random.randint(1, 10))]
+
+
+def genenaraMatrizTamanoRandon2():
+    return [[random.randint(0, 100) for x in range(random.randint(2, 6))] for y in range(random.randint(2, 6))]
 
 
 def iguales(lista1, lista2):
@@ -37,3 +41,5 @@ def sumaVecimos(x, y, matriz):
     if y > len(matriz[0] - 1):
         suma += matriz[x][y + 1]
     return suma
+
+print(genenaraMatrizTamanoRandon2())
