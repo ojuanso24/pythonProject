@@ -43,8 +43,8 @@ def Contagiar(matriz):
     print("")
 
 def infectar(matriz):
+    None
 
-    # MostrarCiudad(matrizAux)
 
 
 # filas1 = int(input("Filas?: "))
