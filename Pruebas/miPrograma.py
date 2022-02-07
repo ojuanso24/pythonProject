@@ -17,3 +17,7 @@ for i in range(len(matriz1)):
 # print(matriz1)
 
 print(matrizes.sumaVecimos(0, 1, matrizes.genenaraMatriz(4, 7, 4)))
+
+
+for columnas in range():
+    none
