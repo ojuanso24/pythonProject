@@ -31,20 +31,20 @@ def Contagiar(ciudad):
     print(MuestraCiudad(ciudad, dia))
     while personas > contagios:
         infectado = "I-" + str(dia) + " "
-        for x in range(len(ciudad)):
-            for y in range(len(ciudad[x])):
-                if ciudad[x][y] == infectado:
-                    if x > 0 and ciudad[x - 1][y] == "SANO":
-                        ciudad[x - 1][y] = "I-" + str(dia + 1) + " "
+        for y in range(len(ciudad)):
+            for x in range(len(ciudad[y])):
+                if ciudad[y][x] == infectado:
+                    if y > 0 and ciudad[y - 1][x] == "SANO":
+                        ciudad[y - 1][x] = "I-" + str(dia + 1) + " "
                         contagios += 1
-                    if x < len(ciudad) - 1 and ciudad[x + 1][y] == "SANO":
-                        ciudad[x + 1][y] = "I-" + str(dia + 1) + " "
+                    if y < len(ciudad) - 1 and ciudad[y + 1][x] == "SANO":
+                        ciudad[y + 1][x] = "I-" + str(dia + 1) + " "
                         contagios += 1
-                    if y > 0 and ciudad[x][y - 1] == "SANO":
-                        ciudad[x][y - 1] = "I-" + str(dia + 1) + " "
+                    if x > 0 and ciudad[y][x - 1] == "SANO":
+                        ciudad[y][x - 1] = "I-" + str(dia + 1) + " "
                         contagios += 1
-                    if y < len(ciudad[0]) - 1 and ciudad[x][y + 1] == "SANO":
-                        ciudad[x][y + 1] = "I-" + str(dia + 1) + " "
+                    if x < len(ciudad[0]) - 1 and ciudad[y][x + 1] == "SANO":
+                        ciudad[y][x + 1] = "I-" + str(dia + 1) + " "
                         contagios += 1
         dia += 1
         print(MuestraCiudad(ciudad, dia))
