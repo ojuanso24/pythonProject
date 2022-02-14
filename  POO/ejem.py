@@ -5,6 +5,7 @@ class Mueble:
         self.publica = "Publica"
     def getPrivada(self):
         return self.__privada
+
 class Mesa(Mueble):
     def __init__(self, tipo, color):
         Mueble.__init__(self, tipo)
