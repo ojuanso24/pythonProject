@@ -66,3 +66,5 @@ for alu in listaAlumnos:
         contador += 1
         print(f"Asignatura: {asignatura.nombre}, nota: {asignatura.nota}, Estado: {asignatura.estado()}")
     print("Media: " + str(total / contador))
+
+    
